@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Styling</title>
+<style>
+table, th, td{
+    border:1px solid black;
+    border-collapse: collapse;}
+th:nth-child(odd), td:nth-child(odd){
+    background-color:pink;}
+</style>
+</head>
+<body>
+    <h2>Vertical Stripped Table</h2>
+<table style="width:40%;">
+    <tr>
+        <th>Fruits</th>
+        <th>Vegetables</th>
+    </tr>
+    <tr>
+        <td>Apple</td>
+        <td>Mango</td>
+    </tr>
+    <tr>
+        <td>Onion</td>
+        <td>Cabbage</td>
+    </tr>
+</table>
+</body>
+</html>

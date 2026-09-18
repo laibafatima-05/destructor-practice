@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Normal Container</h2>
+    <p>This is a limited width container.</p>
+</div>
+<div class="container-fluid">
+    <h2>Fluid Container</h2>
+    <p>This container uses the full available width.</p>
+</div>
+<!-- Basic Rows -->
+ <h3>Basic Row</h3>
+<div class="row">
+    <div class="col  border border-success">1</div>
+    <div class="col  border border-success">2</div>
+    <div class="col  border border-success">3</div>
+    <div class="col  border border-success">4</div>
+</div>
+<!-- Row cols -->
+ <h3>Row Columns</h3>
+ <div class="row row-cols-3">
+    <div class="col  border border-success">A</div>
+    <div class="col  border border-success">B</div>
+    <div class="col  border border-success">C</div>
+ </div>
+ <!-- Rows-cols-auto -->
+  <h3>Auto Columns</h3>
+<div class="row row-cols-auto">
+    <div class="col  border border-success">Apple</div>
+    <div class="col  border border-success">Mango</div>
+    <div class="col border border-success">Orange</div>
+</div>
+<!-- col-* -->
+ <h3>Column Size</h3>
+ <div class="row">
+    <div class="col-6  border border-success">Left</div>
+    <div class="col-6  border border-success">Right</div>
+ </div>
+ <div class="row">
+    <div class="col-8  border border-success">A</div>
+    <div class="col-4  border border-success">B</div>
+ </div>
+<!-- offset-* -->
+ <h3>Offset Column</h3>
+ <div class="row">
+    <div class="col-5 offset-3 border border-success">Hello</div>
+</div>
+<!-- Reordering -->
+ <h3>Columns Reordering</h3>
+ <div class="row">
+    <div class="col order-3 bg-info">A</div>
+    <div class="col order-2 bg-danger">B</div>
+    <div class="col order-1 bg-warning">C</div>
+    <div class="col order-4 bg-success">D</div>
+ </div>
+ <!-- Nesting Columns -->
+  <h3>Nesting Columns</h3>
+  <div class="container">
+    <div class="row">
+        <div class="col bg-secondary border">Column 1</div>
+        <div class="col bg-secondary border">Column 2</div>
+        <div class="row">
+        <div class="col-2 bg-success">Nested Column 1</div>
+        <div class="col-2 bg-danger">Nested Column 2</div>
+        <div class="col-2 bg-info">Nested Column 3</div>
+    </div>
+   </div>
+</body>
+</html>

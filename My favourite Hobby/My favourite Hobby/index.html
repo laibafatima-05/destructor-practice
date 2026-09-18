@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Hobby</title>
+    <!--Base Tag-->
+    <base href="./">
+    <!-- Favicon - Relative File Path -->
+    <link rel="icon" type="images/png" href="images/book-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heading -->
+    <header>
+        <h1>My Favorite Hobby</h1>
+        <p>Reading Books</p>
+        <!-- Script Tag -->
+         <p id="message"></p>
+    </header>
+    <!-- Navigation Tag -->
+     <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#reading-time">My Reading Time</a>
+        <a href="#links">Links</a>
+        <a href="#more">More Information</a>
+     </nav>
+     <!-- Article Tag -->
+    <article>
+    <!-- Introduction -->
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+            Reading is my favorite hobby. It helps me gain knowledge,
+            improve my vocabulary, and relax my mind.
+        </p>
+        <!-- Image -->
+        <img src="images/reading.jpg" alt="Reading Image">
+    </section>
+    <!-- Table -->
+    <section class="content">
+        <h2>My Reading Time</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>30 min</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>45 min</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Aside Tag -->
+     <aside>
+        <h2>Reading Tips</h2>
+        <p>Choose a quiet place and read regularly to make reading a habit.</p>
+     </aside>
+     <!-- Details and Summary Tags -->
+      <section id="more">
+        <details>
+            <summary>More About My Hobby</summary>
+            <p>Reading books helps me learn new things and improves my imagination and vocabulary.</p>
+        </details>
+      </section>
+    </article>
+    <!-- Links -->
+     <section class="content">
+        <h2>Links</h2>
+        <!-- Internal Link -->
+        <a href="#intro">Go to Introduction</a>
+        <br><br>
+        <!-- External Link - Absolute File Path -->
+        <a href="https://www.google.com/" target="_blank">
+            Visit Google
+        </a>
+         <br><br>
+        <button onclick="alert('Keep Reading!')">Click Link</button>
+    </section>
+    <!--Lists-->
+    <section>
+        <h2>My Reading Routine</h2>
+        <ol>
+            <li>Start</li>
+            <li>Finish</li>
+        </ol>
+        <h2>My favourite Reading Things</h2>
+        <ul>
+            <li>Novels</li>
+            <li>Notebooks</li>
+        </ul>
+    </section>
+    <!--Content Flow-->
+    <section>
+        <h2>Reading Benefits</h2>
+        <div>
+            Reading improves<span> knowledge </span>.It also helps me relax.
+        </div>
+    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UKPkqrkgKmw?si=DfnPnqKSwQ2-LqTD" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+     encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-
+     origin" allowfullscreen></iframe>
+    <!-- No Script Tag -->
+     <noscript>JavaScript is disabled in your browser.</noscript>
+     <!-- Footer Tag -->
+      <footer>
+        <p>My Favourite Hobby - Reading Books</p>
+        <p>Thank you for visiting my page!</p>
+      </footer>
+      <!-- Script Tag -->
+       <script>
+        document.getElementById("message").innerHTML="Welcome To my Favourite Hobby Page!";
+       </script>
+</body>
+</html>

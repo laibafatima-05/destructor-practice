@@ -1,0 +1,425 @@
+/* Basic */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4px;
+    height:auto;
+    background-color: transparent;
+}
+/* Hero Section */
+section:first-of-type {
+    background-color: rgb(160, 130, 92);
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    text-align: start;
+    font-size: 50px;
+}
+.hero h1 {
+    font-size: 50px;
+    font-weight:800;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    order:1;
+}
+.hero h2 {
+    position: absolute;
+    left:12%;
+    top:32%;
+    font-size: 23px;
+    font-weight:600;
+    margin-top:0;
+    order:2;
+}
+.hero a {
+    order:3;
+}
+h1, h2{
+    color:black;
+}
+#menu h2 {
+    color: black;
+    font-size: 50px;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 140px;
+    margin-left:160px;
+    position: relative;
+}
+.order-btn {
+    display:block;
+    border-radius:10px;
+    border-color:#4b2e24;
+}
+a:has(.order-btn) {
+    text-decoration: none;
+}
+/* Navbar Hover */
+nav a {
+    color: black;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+nav a img {
+    width:40px;
+    height:40px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+nav .logo {
+    background: transparent;
+}
+
+nav a:hover {
+    background-color:#6f4e37;
+    color: white;
+    border-radius: 5px;
+}
+nav > a:hover {
+    background-color:transparent;
+    color: black;
+}
+.hero {
+    background-image: url("coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.hero h1 {
+    animation: slideDown 1s ease-out;
+}
+.hero p {
+    animation: slideUp 1s ease-out;
+}
+
+.hero button {
+    animation: fadeIn 1.5s ease-out;
+}
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity:0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;}
+
+    to {
+        opacity: 1;}
+}
+.menu-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.fresh-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-heading {
+    font-size: 40px;
+    font-weight: 600;
+}
+.card{
+    margin:0;}
+.card h5 {
+    margin-top: 10px;
+}
+/* Cards Hover */
+.card menu {
+    height: 450px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card:focus-within {
+    transform: scale(1.05);
+}
+.card img {
+    width:90%;
+    transition: 0.3s
+}
+.card button {
+    margin:auto;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+/* Order Now Button Hover */
+button {
+    transition:0.3s;
+}
+button:hover {
+    background-color:#6f4e37;
+    color:white;
+    transform: scale(1.05);
+}
+/* Hero Button Hover */
+.hero button {
+    transition: 0.3s;
+}
+.hero button:hover {
+    transform: scale(1.05);
+    background-color:#6f4e37;
+    color: white;
+}
+/* About Us */
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-heading {
+    font-size: 26px;
+    font-weight:600;
+}
+/* About Section Animation */
+
+#about .col-md-7 {
+    animation: aboutText 1.2s ease-out;
+}
+
+#about .col-md-4 {
+    animation: aboutImage 1.2s ease-out;
+}
+@keyframes aboutText {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);}
+
+    to {
+        opacity: 1;
+        transform: translateX(0);}
+}
+@keyframes aboutImage {
+    from {
+        opacity: 0;
+        transform: translateX(60px);}
+
+    to {
+        opacity: 1;
+        transform: translateX(0);}
+}
+
+/* Menu Cards */
+section div {
+    border-radius:10px;
+    padding:0;
+}
+#menu .row .card {
+    animation: menuCard 1s ease-out;}
+
+@keyframes menuCard {
+    from {
+        opacity: 0;
+        transform: translateY(50px);}
+    to {
+        opacity: 1;
+        transform: translateY(0);}
+}
+/* Gallery */
+#gallery {
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color:#f0deb3;
+    text-align: center;
+}
+#gallery .menu-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color:#4b2e24;
+    font-family: Georgia,serif;
+    text-align: center;
+}
+#gallery .col-md-2 {
+    padding:3px;
+}
+footer i {
+    color: black;
+}
+.footer-heading {
+    position:relative;
+    display:inline-block;
+    font-size:18px;
+    font-weight:600;
+    padding-top:20px;
+    padding-bottom:5px;
+    color: black;
+}
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.footer-heading:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+}
+.footer {
+    background-color:#866044;
+    border-top: 2px solid #d6b66a;
+    text-align: center;
+    width:100%;
+    margin-top: auto;
+}
+.footer p {
+    font-size: 12px;
+    color:black;
+    margin-bottom: 8px;
+}
+.footer a {
+    color:black;
+    text-decoration: none;
+}
+.social-icons a {
+    margin-right: 12px;
+}
+.follow-us {
+    padding-right:250px;
+}
+.contact-us {
+    padding-left:210px;
+}
+.quick-links p {
+    margin-bottom: 6px;
+}
+.quick-links a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.quick-links a:hover {
+  color: white;
+  border-radius: 10px;
+}
+/* Contact */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;}
+  nav div {
+    flex-direction: column;
+    align-items: center;}
+
+  .hero h1 {
+    font-size: 35px;}
+  .hero h2 {
+    font-size: 22px;}
+  .hero {
+    padding-top: 100px;}
+  .order-btn {
+    margin-left: 20px;
+  }
+
+  #about .col-md-7,
+  #about .col-md-4 {
+    width: 100%;
+    margin: 10px 0;}
+  #about img {
+    width: 100%;
+    height: auto;}
+
+  #menu .col-md-3 {
+    width: 90%;
+    margin: auto;}
+  #menu img {
+    max-width: 100%;
+    height: auto;}
+  #menu .card {
+    margin:20px auto;
+    width:80%;
+  }  
+  #about .card {
+    width:90%;
+    margin:20px auto;
+
+  }
+
+  #gallery .col-md-2 {
+    width: 50%;}
+  #gallery img {
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 15px;}
+    #contact .col-md-6,
+  #contact .col-md-5 {
+    width: 100%;
+    margin: 10px 0;}
+}
+#gallery img {
+    transition:0.3s ease;
+}
+#gallery img:hover {
+    transform: scale(1.08);
+    opacity:0.8;
+}
+#contact .row {
+    align-items: flex-start;
+}
+.col-md-4 a {
+    color:black;
+    text-decoration: none;
+    display:block;
+}
+#gallery {
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color:#f0deb3;
+    text-align: center;
+}
+#gallery .menu-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color:#4b2e24;
+    font-family: Georgia,serif;
+    text-align: center;
+}
+#gallery .col-md-2 {
+    padding:3px;
+}
+@media (max-width:768px) {
+.follow-us,
+.contact-us{
+        padding-right: 0;
+        padding-left: 0;
+ }
+}

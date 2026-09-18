@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Viewport -->
+    <meta name = "Viewport" content="width=width-device, initial-scale=1.0">
+    <title>My Favourite Place</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Arial;
+        }
+        h1 {
+            font-size: 4vw;
+            text-align:center;
+        }
+        .box {
+            display:flex;
+        }
+        .left, .right {
+            width: 50%;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width:600px)
+        {
+            .box {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: auto;
+            }
+            h1 {
+                font-size: 10vw;
+            }
+        }
+    </style>
+</head>
+<body>
+        <h1>My Favourite Place</h1>
+    <div class="box">
+        <div class="left">
+        <h2>Hunza</h2>
+        <p>Hunza is famous for its beautiful mountains and peaceful environment.</p>
+    </div>
+    <div class="right">
+        <h2>Picture</h2>
+        <picture>
+            <source srcset="https://www.w3schools.com/html/img_smallflower.jpg">
+            media="(max-width:600px)">
+            <img src="https://www.w3schools.com/html/img_chania.jpg" alt="My favourite place">
+        </picture>
+    </div>
+</body>
+</html>
